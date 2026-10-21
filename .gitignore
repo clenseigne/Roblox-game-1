@@ -1,0 +1,25 @@
+# Roblox Studio
+*.rbxl.lock
+*.rbxlx.lock
+*.rbxl.bak
+*.rbxlx.bak
+
+# Blender
+*.blend1
+*.blend2
+
+# Python
+__pycache__/
+*.pyc
+
+# OS / editor junk
+Thumbs.db
+desktop.ini
+.DS_Store
+*.tmp
+.vscode/
+.idea/
+
+# Secrets (never commit)
+.env
+*.env

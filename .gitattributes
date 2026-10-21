@@ -1,0 +1,15 @@
+# Keep text files with LF in the repo so Windows and cloud (Linux) edits don't fight
+* text=auto
+
+*.luau text eol=lf
+*.lua text eol=lf
+*.py text eol=lf
+*.json text eol=lf
+
+# Binary files
+*.rbxl binary
+*.rbxm binary
+*.fbx binary
+*.blend binary
+*.png binary
+*.jpg binary

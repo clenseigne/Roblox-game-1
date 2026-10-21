@@ -1,0 +1,272 @@
+[
+ {
+  "url": "ReplicatedStorage/Shared/Config.luau",
+  "parents": [
+   "ReplicatedStorage",
+   "Shared"
+  ],
+  "name": "Config",
+  "class": "ModuleScript"
+ },
+ {
+  "url": "ReplicatedStorage/Shared/FoodWander.luau",
+  "parents": [
+   "ReplicatedStorage",
+   "Shared"
+  ],
+  "name": "FoodWander",
+  "class": "ModuleScript"
+ },
+ {
+  "url": "ReplicatedStorage/Shared/Format.luau",
+  "parents": [
+   "ReplicatedStorage",
+   "Shared"
+  ],
+  "name": "Format",
+  "class": "ModuleScript"
+ },
+ {
+  "url": "ReplicatedStorage/Shared/LuckyModel.luau",
+  "parents": [
+   "ReplicatedStorage",
+   "Shared"
+  ],
+  "name": "LuckyModel",
+  "class": "ModuleScript"
+ },
+ {
+  "url": "ReplicatedStorage/Shared/Net.luau",
+  "parents": [
+   "ReplicatedStorage",
+   "Shared"
+  ],
+  "name": "Net",
+  "class": "ModuleScript"
+ },
+ {
+  "url": "ServerScriptService/Server/LuckyService.luau",
+  "parents": [
+   "ServerScriptService",
+   "Server"
+  ],
+  "name": "LuckyService",
+  "class": "ModuleScript"
+ },
+ {
+  "url": "ServerScriptService/Server/Main.server.luau",
+  "parents": [
+   "ServerScriptService",
+   "Server"
+  ],
+  "name": "Main",
+  "class": "Script"
+ },
+ {
+  "url": "ServerScriptService/Server/PetService.luau",
+  "parents": [
+   "ServerScriptService",
+   "Server"
+  ],
+  "name": "PetService",
+  "class": "ModuleScript"
+ },
+ {
+  "url": "ServerScriptService/Server/PlayerData.luau",
+  "parents": [
+   "ServerScriptService",
+   "Server"
+  ],
+  "name": "PlayerData",
+  "class": "ModuleScript"
+ },
+ {
+  "url": "ServerScriptService/Server/PlotService.luau",
+  "parents": [
+   "ServerScriptService",
+   "Server"
+  ],
+  "name": "PlotService",
+  "class": "ModuleScript"
+ },
+ {
+  "url": "ServerScriptService/Server/RollService.luau",
+  "parents": [
+   "ServerScriptService",
+   "Server"
+  ],
+  "name": "RollService",
+  "class": "ModuleScript"
+ },
+ {
+  "url": "ServerScriptService/Server/StandService.luau",
+  "parents": [
+   "ServerScriptService",
+   "Server"
+  ],
+  "name": "StandService",
+  "class": "ModuleScript"
+ },
+ {
+  "url": "ServerScriptService/Server/WildsService.luau",
+  "parents": [
+   "ServerScriptService",
+   "Server"
+  ],
+  "name": "WildsService",
+  "class": "ModuleScript"
+ },
+ {
+  "url": "StarterPlayerScripts/Client/Assets.luau",
+  "parents": [
+   "StarterPlayerScripts",
+   "Client"
+  ],
+  "name": "Assets",
+  "class": "ModuleScript"
+ },
+ {
+  "url": "StarterPlayerScripts/Client/Battle.luau",
+  "parents": [
+   "StarterPlayerScripts",
+   "Client"
+  ],
+  "name": "Battle",
+  "class": "ModuleScript"
+ },
+ {
+  "url": "StarterPlayerScripts/Client/Coins.luau",
+  "parents": [
+   "StarterPlayerScripts",
+   "Client"
+  ],
+  "name": "Coins",
+  "class": "ModuleScript"
+ },
+ {
+  "url": "StarterPlayerScripts/Client/FoodView.luau",
+  "parents": [
+   "StarterPlayerScripts",
+   "Client"
+  ],
+  "name": "FoodView",
+  "class": "ModuleScript"
+ },
+ {
+  "url": "StarterPlayerScripts/Client/HUD.luau",
+  "parents": [
+   "StarterPlayerScripts",
+   "Client"
+  ],
+  "name": "HUD",
+  "class": "ModuleScript"
+ },
+ {
+  "url": "StarterPlayerScripts/Client/Juice.luau",
+  "parents": [
+   "StarterPlayerScripts",
+   "Client"
+  ],
+  "name": "Juice",
+  "class": "ModuleScript"
+ },
+ {
+  "url": "StarterPlayerScripts/Client/Lucky.luau",
+  "parents": [
+   "StarterPlayerScripts",
+   "Client"
+  ],
+  "name": "Lucky",
+  "class": "ModuleScript"
+ },
+ {
+  "url": "StarterPlayerScripts/Client/Main.client.luau",
+  "parents": [
+   "StarterPlayerScripts",
+   "Client"
+  ],
+  "name": "Main",
+  "class": "LocalScript"
+ },
+ {
+  "url": "StarterPlayerScripts/Client/Mount.luau",
+  "parents": [
+   "StarterPlayerScripts",
+   "Client"
+  ],
+  "name": "Mount",
+  "class": "ModuleScript"
+ },
+ {
+  "url": "StarterPlayerScripts/Client/PetCard.luau",
+  "parents": [
+   "StarterPlayerScripts",
+   "Client"
+  ],
+  "name": "PetCard",
+  "class": "ModuleScript"
+ },
+ {
+  "url": "StarterPlayerScripts/Client/Pets.luau",
+  "parents": [
+   "StarterPlayerScripts",
+   "Client"
+  ],
+  "name": "Pets",
+  "class": "ModuleScript"
+ },
+ {
+  "url": "StarterPlayerScripts/Client/Placement.luau",
+  "parents": [
+   "StarterPlayerScripts",
+   "Client"
+  ],
+  "name": "Placement",
+  "class": "ModuleScript"
+ },
+ {
+  "url": "StarterPlayerScripts/Client/Puppet.luau",
+  "parents": [
+   "StarterPlayerScripts",
+   "Client"
+  ],
+  "name": "Puppet",
+  "class": "ModuleScript"
+ },
+ {
+  "url": "StarterPlayerScripts/Client/Roll.luau",
+  "parents": [
+   "StarterPlayerScripts",
+   "Client"
+  ],
+  "name": "Roll",
+  "class": "ModuleScript"
+ },
+ {
+  "url": "StarterPlayerScripts/Client/Stand.luau",
+  "parents": [
+   "StarterPlayerScripts",
+   "Client"
+  ],
+  "name": "Stand",
+  "class": "ModuleScript"
+ },
+ {
+  "url": "StarterPlayerScripts/Client/StandPath.luau",
+  "parents": [
+   "StarterPlayerScripts",
+   "Client"
+  ],
+  "name": "StandPath",
+  "class": "ModuleScript"
+ },
+ {
+  "url": "StarterPlayerScripts/Client/UIStyle.luau",
+  "parents": [
+   "StarterPlayerScripts",
+   "Client"
+  ],
+  "name": "UIStyle",
+  "class": "ModuleScript"
+ }
+]
