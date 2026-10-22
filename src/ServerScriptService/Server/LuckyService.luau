@@ -97,6 +97,31 @@ local function pickup(player: Player, id: any)
 	return { ok = true, tier = tierIndex }
 end
 
+-- One of the tier's pets by its odds (`pets` = { [petId]: weight }), else its single `pet`.
+local function pickPet(tier): string
+	local pets = tier.pets
+	if not pets then
+		return tier.pet or "Hippo"
+	end
+	local total = 0
+	for _, w in pets do
+		total += w
+	end
+	local r = math.random() * total
+	local last = "Hippo"
+	for _, id in Config.PetOrder do
+		local w = pets[id]
+		if w then
+			last = id
+			r -= w
+			if r <= 0 then
+				return id
+			end
+		end
+	end
+	return last
+end
+
 local function open(player: Player)
 	local h = held[player]
 	local d = PlayerData.get(player)
@@ -112,7 +137,7 @@ local function open(player: Player)
 	end
 	local pos = handPosition(player, h)
 	PlayerData.addCoins(player, -tier.cost)
-	local petId = tier.pet or "Hippo"
+	local petId = pickPet(tier)
 	local weight = math.floor((tier.kg or 10) * (0.85 + math.random() * 0.3) * 10 + 0.5) / 10
 	table.insert(d.inventory, { uid = PlayerData.newUid(player), id = petId, weight = weight })
 	clear(player)

@@ -38,6 +38,7 @@ Config.Pets = {
 	Hippo = { rarity = "Epic", height = 3.4, mouth = { 0.41, 0.47 }, margin = 4.5 },
 	TRex = { rarity = "Legendary", height = 5.5, mouth = { 0.84, 0.73 }, margin = 7 },
 } :: { [string]: PetDef }
+Config.PetOrder = { "Hippo", "TRex" } -- fixed order so weighted picks are stable
 Config.Pet = { baseWeight = 10, baseCost = 8, costCurve = 1.15, feedGain = 0.18, baseHeight = 3.4, margin = 4.5,
 	feedDistance = 12, maxOnFarm = 8, maxScale = 3.2,
 	-- riding: hold E on a pet to mount it, tap E to hop off; heavier (bigger) pets run faster
@@ -58,8 +59,9 @@ function Config.feedGain(weight: number): number
 end
 
 -- Lucky blocks: each food drop has `chance` to be a lucky block instead of a coin. Walking up
--- picks it up into your hand (one at a time). Opening it costs `cost` coins and gives a `pet`
--- that hatches around `kg` (+-15%; better blocks hatch heavier pets); or you can toss it.
+-- picks it up into your hand (one at a time). Opening it costs `cost` coins and hatches one of
+-- its `pets` (relative odds; better blocks lean T-Rex) at around `kg` (+-15%; better blocks hatch
+-- heavier pets); or you can toss it.
 -- Tier names match the models in Assets.Lucky and auras in Assets.Auras.
 Config.Lucky = {
 	chance = 0.1, -- 1 in 10 drops
@@ -68,10 +70,10 @@ Config.Lucky = {
 	size = 2.4, -- cube size in studs on the stand (measured front-to-back, so wings don't shrink it)
 	handSize = 1.4, -- cube size when held
 	tiers = {
-		{ name = "Lucky", weight = 70, pet = "TRex", kg = 10, cost = 15, scale = 1, color = Color3.fromRGB(255, 210, 60) },
-		{ name = "Super", weight = 22, pet = "TRex", kg = 25, cost = 60, scale = 1.08, color = Color3.fromRGB(80, 200, 255) },
-		{ name = "Mega", weight = 7, pet = "TRex", kg = 60, cost = 200, scale = 1.16, color = Color3.fromRGB(140, 230, 80) },
-		{ name = "Mythic", weight = 1, pet = "TRex", kg = 150, cost = 800, scale = 1.3, color = Color3.fromRGB(255, 180, 50) },
+		{ name = "Lucky", weight = 70, pets = { Hippo = 75, TRex = 25 }, kg = 10, cost = 15, scale = 1, color = Color3.fromRGB(255, 210, 60) },
+		{ name = "Super", weight = 22, pets = { Hippo = 55, TRex = 45 }, kg = 25, cost = 60, scale = 1.08, color = Color3.fromRGB(80, 200, 255) },
+		{ name = "Mega", weight = 7, pets = { Hippo = 35, TRex = 65 }, kg = 60, cost = 200, scale = 1.16, color = Color3.fromRGB(140, 230, 80) },
+		{ name = "Mythic", weight = 1, pets = { Hippo = 15, TRex = 85 }, kg = 150, cost = 800, scale = 1.3, color = Color3.fromRGB(255, 180, 50) },
 	},
 }
 

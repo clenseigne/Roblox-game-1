@@ -8,7 +8,9 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local GROUPS = {
 	Foods = { "Apple", "Carrot", "Donut", "Taco", "Sushi", "Pizza", "Burger", "GoldenCake" },
 	Pets = { "Hippo", "TRex" },
-	Monsters = {}, -- Verity is a Creator Store model set up by hand (keeps its SurfaceAppearances)
+	-- Verity is a Creator Store model set up by hand (keeps its SurfaceAppearances); the rest are
+	-- the voxel monsters from blender/monsters_voxel.py
+	Monsters = { "Slime", "Shroom", "Boar", "Beetle" },
 	Props = { "Lever", "Coin" },
 }
 local MATERIALS = {

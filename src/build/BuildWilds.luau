@@ -29,9 +29,9 @@ type Theme = {
 	decor: string, -- meadow | beach | desert | snow
 }
 local ZONES: { Theme } = {
-	{ name = "MEADOW", weights = { 6, 20 }, species = "Verity", floor = Color3.fromRGB(118, 156, 62), sign = Color3.fromRGB(70, 140, 50),
+	{ name = "MEADOW", weights = { 6, 20 }, species = "Verity,Slime,Shroom,Boar,Beetle", floor = Color3.fromRGB(118, 156, 62), sign = Color3.fromRGB(70, 140, 50),
 		brush = { Color3.fromRGB(86, 168, 58), Color3.fromRGB(66, 140, 48), Color3.fromRGB(112, 188, 70) }, decor = "meadow" },
-	{ name = "BEACH", weights = { 18, 55 }, species = "Hippo,TRex", floor = Color3.fromRGB(240, 214, 150), sign = Color3.fromRGB(60, 160, 220),
+	{ name = "BEACH", weights = { 18, 55 }, species = "Slime,Boar,Hippo,TRex", floor = Color3.fromRGB(240, 214, 150), sign = Color3.fromRGB(60, 160, 220),
 		brush = { Color3.fromRGB(150, 190, 80), Color3.fromRGB(120, 170, 70), Color3.fromRGB(190, 200, 100) }, decor = "beach" },
 	{ name = "DESERT", weights = { 50, 140 }, species = "Hippo,TRex", floor = Color3.fromRGB(226, 170, 100), sign = Color3.fromRGB(214, 110, 60),
 		brush = { Color3.fromRGB(176, 156, 82), Color3.fromRGB(150, 130, 70), Color3.fromRGB(198, 176, 100) }, decor = "desert" },
